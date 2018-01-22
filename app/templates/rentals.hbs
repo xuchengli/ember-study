@@ -6,6 +6,12 @@
     About Us
   {{/link-to}}
 </div>
-{{#each model as |rental|}}
-    {{comp-rental rental=rental}}
-{{/each}}
+{{#comp-rental-filter
+    filter=(action "filterByCity")
+    as |filteredResults|}}
+    <ul class="results">
+        {{#each filteredResults as |rental|}}
+            <li>{{comp-rental rental=rental}}</li>
+        {{/each}}
+    </ul>
+{{/comp-rental-filter}}
