@@ -10,3 +10,46 @@
         Contact Us
     {{/link-to}}
 </div>
+<nav data-interior-left-nav class="bx--interior-left-nav bx--interior-left-nav--collapseable">
+    <ul class="left-nav-list" data-interior-left-nav-list>
+        <li class="left-nav-list__item" data-interior-left-nav-item>
+            <a class="left-nav-list__item-link">Example Item 1</a>
+        </li>
+        <li class="left-nav-list__item" data-interior-left-nav-item>
+            <a class="left-nav-list__item-link">Example Item 2</a>
+        </li>
+        <li class="left-nav-list__item left-nav-list__item--has-children"
+            data-interior-left-nav-item data-interior-left-nav-with-children>
+            <a class="left-nav-list__item-link">
+                Example Item 3
+                <div class="left-nav-list__item-icon">
+                    <svg class="bx--interior-left-nav__icon" width="10" height="5" viewBox="0 0 10 5" fill-rule="evenodd">
+                        <path d="M10 0L5 5 0 0z"></path>
+                    </svg>
+                </div>
+            </a>
+            <ul class="left-nav-list left-nav-list--nested" data-interior-left-nav-nested-list>
+                <li class="left-nav-list__item" data-interior-left-nav-nested-item>
+                    <a href="#example-item-1A" class="left-nav-list__item-link" data-interior-left-nav-item-link>
+                        Example Item 1A
+                    </a>
+                </li>
+                <li class="left-nav-list__item" data-interior-left-nav-nested-item>
+                    <a href="#example-item-1B" class="left-nav-list__item-link" data-interior-left-nav-item-link>
+                        Example Item 1B
+                    </a>
+                </li>
+                <li class="left-nav-list__item" data-interior-left-nav-nested-item>
+                    <a href="#example-item-1C" class="left-nav-list__item-link" data-interior-left-nav-item-link>
+                        Example Item 1C
+                    </a>
+                </li>
+                <li class="left-nav-list__item" data-interior-left-nav-nested-item>
+                    <a href="#example-item-1D" class="left-nav-list__item-link" data-interior-left-nav-item-link>
+                        Example Item 1D
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
